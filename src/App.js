@@ -180,14 +180,14 @@ export default class componentName extends Component {
       return (
         <td
           style={{
-            textAlign: "left",
-            padding: "8px",
+            textAlign: "center",
+            padding: "8px"
           }}
         >
-          <div style={{ fontWeight: "bold", color: "#4E5983",font:'Poppins' }}>
+          <div style={{ fontWeight: "bold", color: "#4E5983",font:'Poppins',fontSize:'16px' }}>
             {value}
            </div>
-          <div style={{textAlign:'center',color: "#4E5983",font:'Poppins'}}>
+          <div style={{textAlign:'center',color: "#4E5983",font:'Poppins',fontSize:'12px'}}>
             {moment(this.state.time[0].start).format("DD MMM")}
           </div>
         </td>
@@ -243,7 +243,7 @@ export default class componentName extends Component {
                 fontWeight:'Regular',
                 font:'Poppins',
                 opacity:1,
-                backgroundColor:'white',
+                backgroundColor:'white'
               }}
               >
                 <div 
@@ -255,7 +255,8 @@ export default class componentName extends Component {
                           letterSpacing:'0',
                           borderRadius:'6px',
                           color:'white',
-                          opacity:1
+                          opacity:1,
+                          fontSize:'13px'
                           }}>
                   {value.department}
                 </div>
@@ -295,14 +296,3 @@ export default class componentName extends Component {
     );
   }
 }
-
-// const styles = StyleSheet.create({
-//   depCard:{
-//     textAlign:'center',
-//     fontWeight:'SemiBold',
-//     font:'Poppins',
-//     letterSpacing:'0',
-//     borderRadius:'6px',
-//     color:'white'
-//   }
-// });
